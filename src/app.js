@@ -5,3 +5,11 @@ logging.addEventListener("click", (evt) => {
     const cloneArea = document.querySelector(".copy-container")
     cloneArea.insertAdjacentHTML("beforeend", evt.target.innerHTML)
 });
+//part 2
+const btn = document.querySelector("button")
+
+btn.addEventListener("click", (evt) => {
+    const cloneArea = document.querySelector(".copy-container")
+    cloneArea.innerHTML = ''
+})
+//part 3

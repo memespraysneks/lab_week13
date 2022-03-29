@@ -1,0 +1,9 @@
+* {
+    color: black;
+}
+
+.copy-container {
+    display: flex;
+    flex-direction: column;
+
+}

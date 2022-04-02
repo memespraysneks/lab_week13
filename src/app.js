@@ -1,11 +1,10 @@
 //part 1
-const logging = document.querySelector(".original-container")
+const logging = document.querySelectorAll(".original-container div") 
 const cloneArea = document.querySelector(".copy-container")
-logging.addEventListener("click", (evt) => {
-    if (evt.target.localName != "div.copy-container") {
-        cloneArea.insertAdjacentHTML("beforeend", evt.target.innerHTML)
-    }
-});
+logging.forEach(element => element.addEventListener("click", (evt) => {
+    if (!evt.target.parentElement.classList.contains("original-container")){
+        cloneArea.insertAdjacentHTML("beforeend", evt.target.parentElement.outerHTML)
+}}));
 //part 2
 const btn = document.querySelector("button")
 

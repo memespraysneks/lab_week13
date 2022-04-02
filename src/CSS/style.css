@@ -1,9 +1,22 @@
-* {
-    color: black;
+div {
+    border-style: solid;
+    border-radius: 1px;
+    margin-top: 5px;
 }
 
-.copy-container {
-    display: flex;
-    flex-direction: column;
+.original-container{
+    border-style: none;
+    background-color: lightblue;
+}
 
+.copy-container{
+    border-style: none;
+    background-color:lightcoral
+}
+
+button {
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    background-color: gray;
 }
